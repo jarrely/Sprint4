@@ -1,0 +1,14 @@
+Host ssh.github.com
+    User git
+	Hostname github.com
+    PreferredAuthentications publckey
+    IdentityFile ~/.ssh/tripleten-macmini.pub
+	IdentitiesOnly yes
+
+[server]
+headless = true
+port = 10000
+
+[browser]
+serverAddress = "0.0.0.0"
+serverPort = 10000
